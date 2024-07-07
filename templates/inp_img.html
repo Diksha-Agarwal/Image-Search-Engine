@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+	 
+</head>
+<body>
+	
+	<img src="/static/{{filename}}"><br><br>
+
+	{% for i in range(file_list|length) %}
+		<img src="{{url_for('static', filename=file_list[i])}}"> <br>
+		
+	{% endfor %}
+
+</body>
+</html>

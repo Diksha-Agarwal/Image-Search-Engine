@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+	 
+</head>
+<body>
+	<center>
+		<h1>Image Search Engine</h1>
+		<form action="/view1" method="POST">
+			<label for="branch-dropdown">Select Branch : </label>
+			<select name="branch-dropdown" id="branch-dropdown">
+				<option value="--select an option--">--Select an option--</option>
+				<option value="CSE">CSE</option>
+				<option value="IT">IT</option>
+				<option value="AE">AE</option>
+			</select> <br><br>
+
+			<label for="sem-dropdown">Select Semester : </label>
+			<select name="sem-dropdown" id="sem-dropdown">
+				<option value="--select an option--">--Select an option--</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select><br><br>
+
+			Do you have papers downloaded?(yes/no) <input type="text" name="text"><br><br>
+
+			<input type="submit" name="submit-branch" value="submit">
+		</form>
+	</center>
+	
+</body>
+</html>

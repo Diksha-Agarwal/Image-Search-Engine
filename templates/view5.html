@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+    <head><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='main.css')}}">
+     </head>
+    <body>
+        <div class="container">
+            <center><h1><b>Image Search Engine</b></h1></center><br><br>
+            <form action="/process" method="POST" enctype="multipart/form-data">
+               <h3><b> Select input image: </b></h3><br> <input type="file" name="query_img"><br>
+                <input class="submit-btn" type="submit" value="submit" name="submit"> 
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,12 @@
+body {
+  
+  background: url('bg1.jpg');
+  /*background-color: #deedd3;*/
+  color: black;
+  
+}
+.submit-btn {
+  color: black;
+  margin-top: 35px;
+  border: 2px solid #008CBA;
+}
